@@ -8,4 +8,81 @@
     tools:ignore="MissingDefaultResource">
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_controls"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_decrease_elements_window_size"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/btn_increase_elements_window_size"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/btn_quest"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/btn_undo"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/btn_info"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_elements"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_groups"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_controls" />
+
+        <LinearLayout
+            android:id="@+id/ll_groups"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
